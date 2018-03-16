@@ -1,2 +1,2 @@
-# vagy.killersokoban
+# vagy.killer
 projlab repo
