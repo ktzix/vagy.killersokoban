@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.*;
 
 /**
- *
+ *This class is responsible for the running of the game
  */
 public class Game {
 	private Warehouse warehouse;

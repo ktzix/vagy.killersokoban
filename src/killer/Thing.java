@@ -10,7 +10,12 @@ public interface Thing {
 	 * @param f, the field where it is pushed to
 	 */
 	 public void Push(Thing t, Field f);
-	 public void Enters(Field f);
+
+	/**
+	 * if a thing wants to enter a new field
+	 * @param f,  the field which the thing enters
+	 */
+	public void Enters(Field f);
 	
 
 }
