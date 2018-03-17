@@ -4,6 +4,7 @@ package killer;
  * Crate class implementation,
  * for further information about functions check interface Thing
  */
+@SuppressWarnings({"FieldCanBeLocal", "unused", "WeakerAccess", "FinalizeCalledExplicitly"})
 public class Crate implements Thing {
 	private Field target;
 	private Field current;

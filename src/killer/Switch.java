@@ -1,5 +1,6 @@
 package killer;
 
+@SuppressWarnings("unused")
 public class Switch extends Field{
 	private SecretHole secretHole;
 	private Thing currentThing;

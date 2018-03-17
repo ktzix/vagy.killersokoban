@@ -1,11 +1,12 @@
 package killer;
 
 
-import java.util.*;
+
 
 /**
  * control class implementation
  */
+@SuppressWarnings({"WeakerAccess", "unused"})
 public class Control {
 
 

@@ -7,6 +7,7 @@ import static killer.Control.usecase;
 /**
  * Field class implementation
  */
+@SuppressWarnings({"unused", "FinalizeCalledExplicitly", "WeakerAccess"})
 public class Field {
 	private Map<Direction,Field> neighbors;
 	private Thing currentThing;

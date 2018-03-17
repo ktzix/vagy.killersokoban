@@ -9,13 +9,13 @@ public interface Thing {
 	 * @param t, the thing which pushes it
 	 * @param f, the field where it is pushed to
 	 */
-	 public void push(Thing t, Field f);
+	void push(Thing t, Field f);
 
 	/**
 	 * if a thing wants to enter a new field
 	 * @param f,  the field which the thing enters
 	 */
-	public void enters(Field f);
+	void enters(Field f);
 
 
 

@@ -1,18 +1,19 @@
 package killer;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+
 
 
 /**implementation of the worker class
- * for furhter inforkation about the functions check interface Thing
+ * for further information about the functions check interface Thing
  * */
 public class Worker implements Thing {
-	private Field current;
+	/*private Field current;*/
 
 
-	public void Push(Crate c, Field f) {
+	 @SuppressWarnings("unused")
+	 void Push(Crate c , Field f) {
 		Control.Write(this);
+
 		System.out.println("w Push(Crate, Field)");
 		
 		switch(Control.usecase)	{
@@ -29,6 +30,7 @@ public class Worker implements Thing {
 	}
 
 
+	@SuppressWarnings({"unused", "WeakerAccess"})
 	public void Push(Worker w, Field f) {
 		Control.Write(this);
 		System.out.println("w Push(Worker, Field)");
@@ -37,7 +39,7 @@ public class Worker implements Thing {
 
 
 	public void push(Thing t, Field f) {
-		// TODO Auto-generated method stub
+
 		
 	}
 

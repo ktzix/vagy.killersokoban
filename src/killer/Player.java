@@ -1,6 +1,7 @@
 package killer;
 import java.util.*;
 
+@SuppressWarnings("unused")
 public class Player {
 	private List<Worker> workers;
 	private String name;

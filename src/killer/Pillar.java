@@ -3,6 +3,7 @@ package killer;
 /**
  * its a special thing, functions as a wall
  */
+@SuppressWarnings({"unused", "WeakerAccess"})
 public class Pillar implements Thing{
 	private Field current;
 	
