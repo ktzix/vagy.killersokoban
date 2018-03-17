@@ -1,5 +1,8 @@
 package killer;
 
+/**
+ * its a special thing, functions as a wall
+ */
 public class Pillar implements Thing{
 	private Field current;
 	

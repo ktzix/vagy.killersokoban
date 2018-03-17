@@ -1,5 +1,8 @@
 package killer;
 
+/**
+ * Ii's special hole, it need a switch to act like a hole, otherwise its just a simple field
+ */
 public class SecretHole extends Hole {
 	private Switch sw;
 	private boolean state;
