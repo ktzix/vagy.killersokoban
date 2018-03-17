@@ -1,20 +1,19 @@
 package killer;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+
 
 /**
  *This class is responsible for the running of the game
  */
 public class Game {
-	private Warehouse warehouse;
-	private List<Player> players;
+	/*private Warehouse warehouse;
+	private List<Player> players;*/
 	
 	public static void main(String[] args) {
 		System.out.println("KillerSokoban");
-		int i=0;
+
 		Crate c=new Crate();
 		Field f1=new Field();
 		Worker w1=new Worker();
@@ -74,7 +73,7 @@ public class Game {
 			c.Enters(f1);
 			break;
 		case 11:
-			i=1;
+
 			break;
 		default:
 			break;	
@@ -82,7 +81,7 @@ public class Game {
 		}
 	}
 	
-	public static int Select() {
+	private static int Select() {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		System.out.println("1: CratePushesWorker");		
 		System.out.println("2: CratePushesCrate");		
@@ -109,7 +108,7 @@ public class Game {
 	
 	
 	
-	public void NewGame() {
+	/*public void NewGame() {
 		Control.Write(this);
 		System.out.println("NewGame()");
 	}
@@ -124,6 +123,6 @@ public class Game {
 	public void NextPlayer() {
 		Control.Write(this);
 		System.out.println("NextPlayer()");
-	}
+	}*/
 
 }
