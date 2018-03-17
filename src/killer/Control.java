@@ -8,7 +8,7 @@ import java.util.*;
  */
 public class Control {
 
- 
+
    /* private Map<Object, String> names;
     private static Control control = new Control();*/
     /**
