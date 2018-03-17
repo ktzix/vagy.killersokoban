@@ -16,7 +16,7 @@ public class Worker implements Thing {
 
 		System.out.println("w Push(Crate, Field)");
 		
-		switch(Control.usecase)	{
+		switch(Control.getUseCase()	)	{
 		case 1:
 			f.Accept(this);
 			break;

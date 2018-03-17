@@ -25,53 +25,53 @@ public class Game {
 		//while(i==0)
 		switch(Select()) {
 		case 1:
-			System.out.println("CratePushesWorker");	
-			Control.usecase=1;
+			System.out.println("CratePushesWorker");
+			Control.setUseCase(1);
 			c.enters(f1);
 			break;
 		case 2:
 			System.out.println("CratePushesCrate");
-			Control.usecase=2;
+			Control.setUseCase(1);
 			c.enters(f1);
 			break;
 		case 3:
 			System.out.println("CrateFindsTarget");
-			Control.usecase=3;
+			Control.setUseCase(1);
 			c1.Push(w1,f1);
 			break;
 		case 4:
-			System.out.println("CrateFallsInHole");	
-			Control.usecase=4;
+			System.out.println("CrateFallsInHole");
+			Control.setUseCase(1);
 			c1.Push(w1, h1);
 			break;
 		case 5:
 			System.out.println("WorkerFallsInHole");
-			Control.usecase=5;
+			Control.setUseCase(1);
 			w1.enters(h1);
 			break;
 		case 6:
 			System.out.println("WorkerPushesCrate");
-			Control.usecase=6;
+			Control.setUseCase(1);
 			w.enters(f1);
 			break;
 		case 7:
 			System.out.println("WorkerPushesWorker");
-			Control.usecase=7;
+			Control.setUseCase(1);
 			w1.enters(f1);
 			break;
 		case 8:
 			System.out.println("CratePushedToWall");
-			Control.usecase=8;
+			Control.setUseCase(1);
 			c.enters(f1);
 			break;
 		case 9:
 			System.out.println("WorkerWalksIntoWall");
-			Control.usecase=9;			
+			Control.setUseCase(1);
 			w1.enters(f1);
 			break;
 		case 10:
 			System.out.println("WorkerPushedIntoWall");
-			Control.usecase=10;
+			Control.setUseCase(1);
 			c.enters(f1);
 			break;
 		case 11:

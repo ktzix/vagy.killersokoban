@@ -15,13 +15,13 @@ public class Control {
     /**
      * it serves to help the switch-case architecture you can find in the code
      */
-    public static int usecase;
+    private static int usecase;
 
-    public void setUseCase(int i){
+    public static void setUseCase(int i){
         usecase = i;
     }
 
-    public int getUseCase(){
+    public static int getUseCase(){
         return usecase;
     }
 

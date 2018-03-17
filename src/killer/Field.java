@@ -1,7 +1,7 @@
 package killer;
 import java.util.*;
 
-import static killer.Control.usecase;
+
 
 
 /**
@@ -29,7 +29,7 @@ public class Field {
 		System.out.println("field Accept(Worker)");
 		Field f2=new Field();
 		Pillar p;
-		switch(usecase) {
+		switch(Control.getUseCase()) {
 		case 6:
 			Crate c=new Crate();
 			c.Push(w, f2);
@@ -60,14 +60,14 @@ public class Field {
 		System.out.println("field Accept(Crate)");
 		Field f2;
 		Worker w=new Worker();
-		switch(usecase) {
+		switch(Control.getUseCase()) {
 		case 1:
 			f2=new Field();
 			w.Push(c,f2);
 			Remove(w);
 			break;
 		case 2:
-			usecase=0;
+			Control.setUseCase(0);
 			f2=new Field();
 			Crate c2=new Crate();
 			c2.Push(c, f2);

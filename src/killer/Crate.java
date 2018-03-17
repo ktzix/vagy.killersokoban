@@ -28,7 +28,7 @@ public class Crate implements Thing {
 	public void Push(Worker w, Field f) {
 		Control.Write(this);
 		System.out.println("c Push(Worker,Field)");
-		switch(Control.usecase) {
+		switch(Control.getUseCase()) {
 		case 3:
 			f.Accept(this);			
 			f.Remove(this);			

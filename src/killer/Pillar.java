@@ -8,7 +8,7 @@ public class Pillar implements Thing{
 	private Field current;
 	
 	public Pillar() {
-		if(Control.usecase==3) {
+		if(Control.getUseCase()==3) {
 			Control.Write(this);
 			System.out.println("Pillar Create");
 		}			
