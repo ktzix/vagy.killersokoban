@@ -11,7 +11,7 @@ public class Pillar implements Thing{
 				
 	}
 	
-	public void Push(Thing t, Field f) {
+	public void push(Thing t, Field f) {
 		Control.Write(this);
 		System.out.println("Pillar Push(Thing, Field)");
 	}
@@ -23,7 +23,7 @@ public class Pillar implements Thing{
 	}
 
 	@Override
-	public void Enters(Field f) {
+	public void enters(Field f) {
 		// TODO Auto-generated method stub
 		
 	}

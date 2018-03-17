@@ -38,12 +38,12 @@ public class Field {
 			break;
 		case 9:
 			p=new Pillar();
-			p.Push(w, f2);
+			p.push(w, f2);
 			break;
 		case 10: 
 			Field f3=new Field();
 			p=new Pillar();
-			p.Push(w,f3);
+			p.push(w,f3);
 			w.finalize();
 			break;
 			

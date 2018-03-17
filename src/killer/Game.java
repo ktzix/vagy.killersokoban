@@ -1,7 +1,6 @@
 package killer;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
@@ -11,7 +10,7 @@ import java.util.*;
 public class Game {
 	private Warehouse warehouse;
 	private List<Player> players;
-	
+
 	public static void main(String[] args) {
 		System.out.println("KillerSokoban");
 		int i=0;
@@ -20,18 +19,20 @@ public class Game {
 		Worker w1=new Worker();
 		Crate c1=new Crate();
 		Hole h1=new Hole();
-		Worker w=new Worker();
+		Worker w =new Worker();
+
+
 		//while(i==0)
 		switch(Select()) {
 		case 1:
 			System.out.println("CratePushesWorker");	
 			Control.usecase=1;
-			c.Enters(f1);
+			c.enters(f1);
 			break;
 		case 2:
 			System.out.println("CratePushesCrate");
 			Control.usecase=2;
-			c.Enters(f1);			
+			c.enters(f1);
 			break;
 		case 3:
 			System.out.println("CrateFindsTarget");
@@ -46,32 +47,32 @@ public class Game {
 		case 5:
 			System.out.println("WorkerFallsInHole");
 			Control.usecase=5;
-			w1.Enters(h1);
+			w1.enters(h1);
 			break;
 		case 6:
 			System.out.println("WorkerPushesCrate");
 			Control.usecase=6;
-			w.Enters(f1);
+			w.enters(f1);
 			break;
 		case 7:
 			System.out.println("WorkerPushesWorker");
 			Control.usecase=7;
-			w1.Enters(f1);
+			w1.enters(f1);
 			break;
 		case 8:
 			System.out.println("CratePushedToWall");
 			Control.usecase=8;
-			c.Enters(f1);
+			c.enters(f1);
 			break;
 		case 9:
 			System.out.println("WorkerWalksIntoWall");
 			Control.usecase=9;			
-			w1.Enters(f1);
+			w1.enters(f1);
 			break;
 		case 10:
 			System.out.println("WorkerPushedIntoWall");
 			Control.usecase=10;
-			c.Enters(f1);
+			c.enters(f1);
 			break;
 		case 11:
 			i=1;

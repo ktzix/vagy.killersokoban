@@ -46,7 +46,7 @@ public class Worker implements Thing {
 	 * @param t, a dolog
 	 * @param f, ahova tolja
 	 */
-	public void Push(Thing t, Field f) {
+	public void push(Thing t, Field f) {
 		// TODO Auto-generated method stub
 		
 	}
@@ -56,7 +56,7 @@ public class Worker implements Thing {
 	 * @param f, a mező, amire a munkás megy
 	 */
 	@Override
-	public void Enters(Field f) {
+	public void enters(Field f) {
 		Control.Write(this);
 		System.out.println("w Enters(Field)");
 		f.Accept(this);

@@ -42,13 +42,13 @@ public class Crate implements Thing {
 	}
 
 
-	public void Enters(Field f) {
+	public void enters(Field f) {
 		Control.Write(this);
 		System.out.println("c Enters(Field)");
 		f.Accept(this);
 	}
 	@Override
-	public void Push(Thing t, Field f) {
+	public void push(Thing t, Field f) {
 		// TODO Auto-generated method stub
 		
 	}

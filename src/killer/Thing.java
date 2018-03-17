@@ -9,8 +9,8 @@ public interface Thing {
 	 * @param t, the thing which pushes it
 	 * @param f, the field where it is pushed to
 	 */
-	 public void Push(Thing t, Field f);
-	 public void Enters(Field f);
+	 public void push(Thing t, Field f);
+	 public void enters(Field f);
 	
 
 }
