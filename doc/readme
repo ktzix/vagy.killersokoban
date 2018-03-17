@@ -1,0 +1,4 @@
+
+set up: java.util.logging
+
+start with  -Djava.util.logging.config.file=/absolute/path/to/logging.properties
