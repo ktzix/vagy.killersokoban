@@ -3,6 +3,7 @@ package killer;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.logging.Logger;
 
 
 
@@ -10,12 +11,22 @@ import java.io.InputStreamReader;
  *This class is responsible for the running of the game
  */
 public class Game {
+
+    private static Logger LOG = Logger.getLogger(Game.class.getName());
+
 	/*private Warehouse warehouse;
 	private List<Player> players;*/
 
 
 	public static void main(String[] args) {
-		System.out.println("KillerSokoban");
+
+	    LOG.finer("trace");
+	    LOG.fine("debug");
+	    LOG.info("Info");
+	    LOG.severe("error");
+	    LOG.warning("warning");
+
+		LOG.info("KillerSokoban");
 
 		/*
 		 * we are creating the basic entities here
