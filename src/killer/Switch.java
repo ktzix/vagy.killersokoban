@@ -1,5 +1,8 @@
 package killer;
 
+/**
+ * Its the switch class, it may change a secret hole's status. check secret hole to find out how
+ */
 @SuppressWarnings("unused")
 public class Switch extends Field{
 	private SecretHole secretHole;

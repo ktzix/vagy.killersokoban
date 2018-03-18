@@ -4,17 +4,22 @@ package killer;
 
 
 /**implementation of the worker class
- * for further information about the functions check interface Thing
+ *
  * */
 public class Worker implements Thing {
 	/*private Field current;*/
 
 
+	/**
+	 * you can check up the functions below in the Thing interface
+	 * a few sequences are extended here
+	 * */
+
 	 @SuppressWarnings("unused")
 	 void Push(Crate c , Field f) {
 		Control.Write(this);
 
-		System.out.println("w Push(Crate, Field)");
+		System.out.println("Push(Crate, Field)");
 		
 		switch(Control.getUseCase()	)	{
 		case 1:
@@ -22,18 +27,16 @@ public class Worker implements Thing {
 			break;
 		case 10: 
 			Field f2=new Field();
+			Control.addToMap(f2, "f2");
             f2.Accept(this);     
-            break;      
-      
-		}
-		
+            break;          
+		}		
 	}
-
 
 	@SuppressWarnings({"unused", "WeakerAccess"})
 	public void Push(Worker w, Field f) {
 		Control.Write(this);
-		System.out.println("w Push(Worker, Field)");
+		System.out.println("Push(Worker, Field)");
 	}
 	@Override
 
@@ -47,7 +50,7 @@ public class Worker implements Thing {
 	@Override
 	public void enters(Field f) {
 		Control.Write(this);
-		System.out.println("w Enters(Field)");
+		System.out.println("Enters(Field)");
 		f.Accept(this);
 		
 	}

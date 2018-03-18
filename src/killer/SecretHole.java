@@ -8,7 +8,12 @@ public class SecretHole extends Hole {
 	private Switch sw;
 	private boolean state;
 	private Thing currentThing;
-	
+
+	/**
+	 * If a crate enters the Secrethole's switch, then the secret hole functions as a hole,
+	 * if the crate leaves then it's just a field
+	 *
+	 */
 	public void Change() {
 		Control.Write(this);
 		System.out.println("Change()");

@@ -17,22 +17,31 @@ public class Crate implements Thing {
 		target=f;		
 	}
 
+	/**
+	 * These functions below are explained in the thing interface
+	 * @param c
+	 * @param f
+	 */
+
 
 	public void Push(Crate c,Field f) {
 		Control.Write(this);
-		System.out.println("c Push(Crate,Field)");
+		System.out.println("Push(Crate,Field)");
 		f.Accept(this);
 	}
 
-
+	/**
+	 * case 3 is extended here
+	 */
 	public void Push(Worker w, Field f) {
 		Control.Write(this);
-		System.out.println("c Push(Worker,Field)");
+		System.out.println("Push(Worker,Field)");
 		switch(Control.getUseCase()) {
 		case 3:
 			f.Accept(this);			
 			f.Remove(this);			
 			Pillar p=new Pillar();
+			Control.addToMap(p, "p");
 			f.Accept(p);
 			this.finalize();
 			break;
@@ -45,7 +54,7 @@ public class Crate implements Thing {
 
 	public void enters(Field f) {
 		Control.Write(this);
-		System.out.println("c Enters(Field)");
+		System.out.println("Enters(Field)");
 		f.Accept(this);
 	}
 	@Override

@@ -1,6 +1,9 @@
 package killer;
 import java.util.*;
 
+/**
+ * It's the player class, not needed for the current task
+ */
 @SuppressWarnings("unused")
 public class Player {
 	private List<Worker> workers;
